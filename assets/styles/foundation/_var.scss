@@ -5,6 +5,8 @@ $color-orange: #ffa800 !default;
 $font-black: $color-black !default;
 $font-white: $color-white !default;
 
+$font-face: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+
 $breakpoints: (
   "xs": (
     min-width: 0,
