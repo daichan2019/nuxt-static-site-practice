@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="header">
     <div class="container">
       <div class="logo">
         <img src="/assets/img/logo_sticky.png" alt="" />
@@ -34,6 +34,10 @@
 </template>
 
 <style lang="scss" scoped>
+@use "@/assets/styles/global" as *;
+.header {
+  color: $font-black;
+}
 .container {
   display: flex;
   align-items: center;
