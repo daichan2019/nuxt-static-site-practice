@@ -86,5 +86,6 @@
   background-color: $color-orange;
   color: $font-white;
   border-radius: 999px;
+  font-weight: 600;
 }
 </style>
