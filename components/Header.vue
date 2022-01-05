@@ -2,7 +2,9 @@
   <header class="header">
     <div class="container">
       <div class="logo">
-        <img src="/assets/img/logo_sticky.png" alt="" />
+        <a href="">
+          <img src="/assets/img/logo_sticky.png" alt="" />
+        </a>
       </div>
       <nav>
         <ul class="nav-list">
@@ -36,12 +38,23 @@
 <style lang="scss" scoped>
 @use "@/assets/styles/global" as *;
 .header {
-  color: $font-black;
+  position: sticky;
+  background-color: $color-white;
 }
 .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 60px;
+  margin: 0 auto;
+
+  @include responsive-up(lg) {
+    max-width: 980px;
+  }
+}
+
+.logo {
+  width: 100px;
 }
 
 .nav-list {
